@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham Panda-Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    #sidebar
+    {
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+    #sidebar.active
+    {
+      transform: translateX(0);
+    }
+    .menu-button-fixed
+    {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    } 
+  </style>
+</head>
+<body class="bg-blue-100 text-gray-800">
+  <button id="menu-button" class="menu-button-fixed ">
+    <img src="menuIcon.gif" alt="Menu" class="w-10 h-10">
+  </button>
+  <header class="bg-blue-600 text-white p-4 lg:px-12">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-4xl font-serif">Shubham Panda-Portfolio</h1>
+    </div>
+  </header>
+  <div class="bg-transparent text-black p-4">
+  <div id="sidebar" class="fixed top-0 left-0  w-64 h-full p-4 shadow-lg">
+    <nav>
+      <br><br>
+      <a href="#about" class="text-3xl font-bold font-serif tracking-wide block py-4">About</a>
+      <a href="#skills" class="text-3xl font-bold font-serif tracking-wide block py-4">Skills</a>
+      <a href="#experience" class="text-3xl font-bold font-serif tracking-wide block py-4">Experience</a>
+      <a href="#contact" class="text-3xl font-bold font-serif tracking-wide block py-4">Contact</a>
+      <a href="ShubhamPanda-Resume.pdf" class="text-3xl font-bold font-serif tracking-wide block py-4" download>Download My Resume</a>
+    </nav>
+  </div>
+  </div>
+
+  <div class="container mx-auto my-8 flex justify-center">
+    <img src="myphoto.jpg" alt="My Photo" class="w-48 h-48 rounded-full shadow-md">
+  </div>
+  <div class="container mx-auto text-center my-4">
+    <p class="text-4xl font-serif">Shubham Panda</p>
+    <p class="text-xl">
+      3rd Year CSE Student at 
+      <a href="https://kiit.ac.in/" target="_blank" class="text-blue-600 hover:underline">KIIT University</a> || Summer Intern at 
+      <a href="https://www.codsoft.in/" target="_blank" class="text-blue-600 hover:underline">CodSoft</a> || Aspiring Web Developer  
+    </p>
+    <br>
+    <p class="text-2xl"><i>"Passion led us here."</i></p>
+  </div>
+  <br><br> 
+  <section id="about" class="container mx-auto my-8 lg:px-20 ">
+    <h2 class="text-6xl font-bold font-serif tracking-wide mb-4 flex justify-center">About Me</h2>
+    <div class="flex justify-center">
+    <div class="container mx-auto my-8">
+      <img src="aboutPort.jpg" alt="About Photo" class="w-66 h-96 shadow-md">
+    </div>
+    <p class="text-lg lg:px-6">
+      Welcome to my digital universe. I'm Shubham Panda, a passionate third-year B.Tech student at KIIT University, delving into the fascinating world of Computer Science and Engineering. Programming for me is where creativity meets logic, unlocking endless possibilities.
+      <br><br>
+      From crafting elegant algorithms to building robust applications, I thrive on the challenges and innovations of today's tech landscape. Whether exploring new frameworks or diving into machine learning, my relentless curiosity drives me to master my craft.
+      <br><br>
+      Beyond the code, I find inspiration in the collaborative spirit of the tech community and the transformative power of technology to shape a better tomorrow. I believe in pushing boundaries, embracing change, and always learning something new.
+      <br><br>
+      Join me on this exhilarating journey through bytes and beyond, where every line of code tells a story of ambition, ingenuity, and the relentless pursuit of excellence.
+    </p>
+  </div>
+  </section>
+  <br><br>
+  <section id="skills" class="my-8 lg:px-20">
+    <h2 class="text-6xl font-bold font-serif tracking-wide mb-4 flex justify-center">Skills</h2>
+    <div class="bg-blue-200 container mx-auto my-8 p-4 shadow-md">
+      <div class="flex justify-center">
+      <div class="container mx-auto my-8 flex justify-center">
+        <img src="skillsPort.jpg" alt="Skills Photo" class="w-61 h-96 shadow-md">
+      </div>
+      
+      <ul class="list-disc list-inside space-y-4">
+        <br>
+        <li><b>Programming Languages:</b> C++, C, JAVA, Python</li>
+        <li><b>Web Technologies:</b> HTML, CSS, JavaScript, MySQL, MongoDB</li>
+        <li><b>Tools and Other Technologies:</b> Arduino-IDE, DOM Manipulation, jQuery, Node.js, Express.js, LLM etc.</li>
+        <li><b>Web Development</b></li>
+        <li><b>AI & ML</b></li>
+        <li><b>Operating Systems:</b> Linux, Windows</li>
+      </ul>
+    </div>
+  </div>
+  </section>
+  <br><br>
+  <section id="experience" class="my-8 lg:px-20">
+    <h2 class="text-6xl font-bold font-serif tracking-wide mb-4 flex justify-center">Experience</h2>
+    <div class="bg-blue-200 container mx-auto my-8 p-4 shadow-md">
+      <h3 class="text-4xl font-serif tracking-wide mb-4 flex justify-center">Projects</h3>
+      <ul class="list-disc list-inside space-y-4">
+        <li class="bg-gray-200 p-4 rounded">
+          <h4 class="text-xl font-bold">Dynamic Calculator</h4>
+          <p class="text-md">Dive into the world of seamless calculations with my dynamic calculator, crafted meticulously using HTML, CSS, and JavaScript. This project showcases not only my technical skills but also my attention to detail and user experience design.</p>
+          <a href="project1.html" target="_blank" class="text-blue-600 hover:underline">click here</a>
+          <br><b>Key Features:</b>
+          <ul class="list-disc list-inside ml-4">
+            <li>Clean & Responsive Design: Looks great on any device.</li>
+            <li>Real-time Calculations: Instant results with error handling.</li>
+            <li>Efficient Code: Well-structured and easy to maintain.</li>
+          </ul>
+        </li>
+      
+        <li class="bg-gray-200 p-4 rounded">
+          <h4 class="text-xl font-bold">Personal Portfolio</h4>
+          <p class="text-md">Welcome to my digital showcase. This personal portfolio is a culmination of my skills in HTML, Tailwind CSS, and JavaScript, designed to present my journey as a budding developer.</p>
+          <a href="index.html" target="_blank" class="text-blue-600 hover:underline">click here</a>
+          <br><b>Key Features:</b>
+          <ul class="list-disc list-inside ml-4">
+            <li>Modern Design: Sleek, responsive layout with Tailwind CSS.</li>
+            <li>Interactive UI: JavaScript-powered interactions for enhanced user experience.</li>
+            <li>Dynamic Content: Engaging elements like modals and carousels.</li>
+            <li>Clean Code: Well-structured HTML for easy maintenance and scalability.</li>
+            <li>Custom Styling: Unique and professional design tailored with Tailwind CSS.</li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <h3 class="text-4xl font-serif tracking-wide mb-4 flex justify-center">Contribution</h3>
+      <ul class="bg-gray-200 p-4 rounded">
+        <p class="text-md">Completed a series of Google Arcade Labs on AI technologies.</p>
+        <a href="https://www.cloudskillsboost.google/public_profiles/b8edb6ea-a5a7-438a-8022-628588bbbe7e" target="_blank" class="text-blue-600 hover:underline">Click here to see all the Badges</a>
+      </ul>
+    </div>
+  </section>
+  <br><br>
+  <section id="contact" class="my-8 lg:px-20">
+    <h2 class="text-6xl font-bold font-serif tracking-wide mb-4 flex justify-center">Contact</h2>
+    <div class="bg-blue-200 container mx-auto my-8 p-4 shadow-md">
+      <div class="flex justify-center space-x-4 mb-4 md:mb-0">
+        <a href="https://www.google.com/search?q=kolkata+west+bengal" target="_blank" class="hover:text-gray-200">
+          <img src="location.png" alt="Location" class="w-6 h-6">
+        </a>
+        <p>Based in: <a href="https://www.google.com/search?q=kolkata+west+bengal" target="_blank" class="text-blue-600 hover:underline">Kolkata, West Bengal</a></p>
+      </div>
+      <br>
+      <div class="flex justify-center space-x-4 mb-4 md:mb-0">
+        <a href="tel:+917477494990" target="_blank" class="hover:text-gray-200">
+          <img src="call.png" alt="Call" class="w-8 h-8">
+        </a>
+        <p>Contact number: <a href="tel:+917477494990" target="_blank" class="text-blue-600 hover:underline">+91 7477 494990</a></p>
+      </div>
+      <br>
+      <div class="flex justify-center space-x-4 mb-4 md:mb-0">
+        <a href="mailto:shubhampandabmt.com" target="_blank" class="hover:text-gray-200">
+          <img src="gmail.png" alt="Email" class="w-6 h-6">
+        </a>
+        <p>Email Id: <a href="mailto:shubhampandabmt@gmail.com" target="_blank" class="text-blue-600 hover:underline">shubhampandabmt@gmail.com</a></p>
+      </div>
+      <br>
+      <div class="flex justify-center space-x-4 mb-4 md:mb-0">
+        <p>Connect with me on:</p>
+        <a href="https://www.linkedin.com/in/shubham-panda-0823b0279/" target="_blank" class="hover:text-gray-200">
+          <img src="linkedin.png" alt="LinkedIn" class="w-6 h-6">
+        </a>
+        <a href="https://github.com" target="_blank" class="hover:text-gray-200">
+          <img src="github.png" alt="GitHub" class="w-6 h-6">
+        </a>
+        <a href="https://www.instagram.com/iam_shubham.p?igsh=dGd6b3NxdGNiMWNk" target="_blank" class="hover:text-gray-200">
+          <img src="instagram.png" alt="instagram" class="w-6 h-6">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 mt-8 lg:px-20">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <h3 class="text-xl font-bold">Get in Touch</h3>
+        <p class="text-sm">Feel free to reach out to me via any of the platforms below.</p>
+      </div>
+      <div class="flex space-x-4 mb-4 md:mb-0">
+        <a href="https://www.linkedin.com/in/shubham-panda-0823b0279/" target="_blank" class="hover:text-gray-200">
+          <img src="linkedin.png" alt="LinkedIn" class="w-6 h-6">
+        </a>
+        <a href="https://github.com" target="_blank" class="hover:text-gray-200">
+          <img src="github.png" alt="GitHub" class="w-6 h-6">
+        </a>
+        <a href="https://www.instagram.com/iam_shubham.p?igsh=dGd6b3NxdGNiMWNk" target="_blank" class="hover:text-gray-200">
+          <img src="instagram.png" alt="instagram" class="w-6 h-6">
+        </a>
+      </div>
+      <div class="text-sm">&copy; 2024 Shubham Panda.</div>
+    </div>
+  </footer>
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const sidebar = document.getElementById('sidebar');
+
+    menuButton.addEventListener('click', () =>
+    {
+      sidebar.classList.toggle('active');
+    });
+
+    const sidebarLinks = sidebar.querySelectorAll('a');
+    sidebarLinks.forEach(link =>
+    {
+      link.addEventListener('click', () =>
+      {
+        sidebar.classList.remove('active');
+      });
+    });
+
+    document.addEventListener('click', (event) =>
+    {
+      const isClickInsideSidebar = sidebar.contains(event.target);
+      const isClickInsideMenuButton = menuButton.contains(event.target);
+      if (!isClickInsideSidebar && !isClickInsideMenuButton) {
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
+  
+</body>
+</html>
