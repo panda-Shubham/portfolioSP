@@ -335,7 +335,7 @@ const Header = () => {
           <NavItem isOpen={isMenuOpen}><a href="#projects" onClick={handleNavItemClick}>Projects</a></NavItem>
           <NavItem isOpen={isMenuOpen}><a href="#contact" onClick={handleNavItemClick}>Contact</a></NavItem>
           <NavItem isOpen={isMenuOpen}>
-            <ResumeButton href="/resume.pdf" target="_blank" rel="noopener noreferrer" onClick={handleNavItemClick}>
+            <ResumeButton href="https://drive.google.com/file/d/1M8ajfRSf3UJBUGst1v4o33dWZpz02y5x/view?usp=sharing" target="_blank" rel="noopener noreferrer" onClick={handleNavItemClick}>
               Resume
             </ResumeButton>
           </NavItem>
