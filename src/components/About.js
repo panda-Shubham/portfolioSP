@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import theme from '../styles/Theme';
-import profileImage from '../assets/images/profile.jpg'; // Update with your actual image path
+import profileImage from '../assets/images/profile.jpg';
 
 const AboutSection = styled.section`
   min-height: 100vh;
@@ -181,10 +181,11 @@ const About = () => {
             <AboutText>
               <p>
                 Hello! I'm Shubham, a software developer passionate about creating things that live on the internet. 
-                My interest in web development started back in 2015 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                 I love building clean, responsive, and user-friendly websites. With experience in Web technologies, I’ve developed landing pages, personal portfolios and some ML models that blend design and functionality.
+
               </p>
               <p>
-                Fast-forward to today, and I've had the privilege of working at an advertising agency, a start-up, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences.
+                I’m currently exploring full-stack development and machine learning, aiming for a high-impact role in tech World. Outside of coding, I enjoy detective stories, creative thinking, and turning big ideas into real-world solutions.
               </p>
               <p>
                 Here are a few technologies I've been working with recently:
